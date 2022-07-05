@@ -8,7 +8,15 @@
 
 @font-face {
   font-family: "Ruhl";
-  src: url(/fonts/FrankRuhlLibre-Regular.ttf);
+  src: url("/fonts/FrankRuhlLibre-Regular.ttf");
+}
+@font-face {
+  font-family: "Ruhl Medikum";
+  src: url("/fonts/FrankRuhlLibre-Medium.ttf");
+}
+@font-face {
+  font-family: "Vibes";
+  src: url("/fonts/GreatVibes-Regular.ttf");
 }
 
 html {
@@ -31,6 +39,7 @@ li,
 button,
 label,
 input,
+a,
 p {
   font-size: var(--text);
 }
@@ -45,6 +54,14 @@ h5 {
   font-size: var(--header4);
 }
 
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -52,9 +69,38 @@ h5 {
   align-items: center;
 }
 
-ul {
-  list-style: none;
+body {
+  font-family: "Ruhl", sans-serif;
 }
-a {
-  text-decoration: none;
+
+h1 {
+  font-family: "Vibes", sans-serif;
+}
+
+/* Nav section */
+.main-head {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+
+#logo {
+  flex: 1 1 20rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
+
+.hero {
+  min-height: 90vh;
 }
