@@ -65,7 +65,7 @@ a {
 .flex {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
   align-items: center;
 }
 
@@ -103,4 +103,16 @@ nav {
 
 .hero {
   min-height: 90vh;
+  width: 95%;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-introduction {
+  flex: 1 1 20rem;
+}
+
+.hero-images {
+  flex: 1 1 20rem;
 }
